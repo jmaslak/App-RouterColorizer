@@ -8,7 +8,7 @@ router-colorizer.pl - Colorize router CLI output
 
 =head1 VERSION
 
-version 1.212300
+version 1.212301
 
 =head1 DESCRIPTION
 
@@ -80,6 +80,7 @@ following in your C<~/.bashrc>:
 
     sshr() {
         ssh "$@" | router-colorizer.pl
+    }
 
 =head1 BUGS
 
