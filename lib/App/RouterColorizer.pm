@@ -12,6 +12,7 @@ use strict;
 use warnings;
 
 package App::RouterColorizer;
+
 use Moose;
 
 use feature 'signatures';
