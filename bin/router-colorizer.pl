@@ -142,6 +142,7 @@ following in your C<~/.bashrc>:
 
     sshr() {
         ssh "$@" | router-colorizer.pl
+    }
 
 =head1 BUGS
 
