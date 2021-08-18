@@ -45,7 +45,7 @@ user@swXX> show interfaces
 
 [1;31mPhysical interface: ge-0/0/0, Enabled, Physical link is Down[0m
   Interface index: 146, SNMP ifIndex: 501
-  Description: Test Port
+[36m  Description: Test Port[0m
   Link-level type: Ethernet, MTU: [4m8[24m018, LAN-PHY mode, Speed: Auto, Duplex: Auto,
   BPDU Error: None, MAC-REWRITE Error: None, Loopback: Disabled, Source filtering: Disabled,
   Flow control: Enabled, Auto-negotiation: Enabled, Remote fault: Online, Media type: Copper,
@@ -71,7 +71,7 @@ user@swXX> show interfaces
 
 [32mPhysical interface: ge-0/0/1, Enabled, Physical link is Up[0m
   Interface index: 147, SNMP ifIndex: 504
-  Description: Foo Bridge
+[36m  Description: Foo Bridge[0m
   Link-level type: Ethernet, MTU: [4m1[24m514, LAN-PHY mode, Speed: Auto, Duplex: Auto,
   BPDU Error: None, MAC-REWRITE Error: None, Loopback: Disabled, Source filtering: Disabled,
   Flow control: Enabled, Auto-negotiation: Enabled, Remote fault: Online, Media type: Copper,
@@ -97,7 +97,7 @@ user@swXX> show interfaces
 
 [1;31mPhysical interface: ge-0/0/2, Enabled, Physical link is Down[0m
   Interface index: 148, SNMP ifIndex: 506
-  Description: BAR
+[36m  Description: BAR[0m
   Link-level type: Ethernet, MTU: [4m1[24m514, LAN-PHY mode, Speed: Auto, Duplex: Auto,
   BPDU Error: None, MAC-REWRITE Error: None, Loopback: Disabled, Source filtering: Disabled,
   Flow control: Enabled, Auto-negotiation: Enabled, Remote fault: Online, Media type: Copper,
@@ -123,7 +123,7 @@ user@swXX> show interfaces
 
 [32mPhysical interface: ge-0/0/3, Enabled, Physical link is Up[0m
   Interface index: 149, SNMP ifIndex: 508
-  Description: pc1.example.com
+[36m  Description: pc1.example.com[0m
   Link-level type: Ethernet, MTU: [4m1[24m514, LAN-PHY mode, Speed: Auto, Duplex: Auto,
   BPDU Error: None, MAC-REWRITE Error: None, Loopback: Disabled, Source filtering: Disabled,
   Flow control: Enabled, Auto-negotiation: Enabled, Remote fault: Online, Media type: Copper,
@@ -149,7 +149,7 @@ user@swXX> show interfaces
 
 [32mPhysical interface: ge-0/0/4, Enabled, Physical link is Up[0m
   Interface index: 150, SNMP ifIndex: 510
-  Description: orange em2 Virtual Machines
+[36m  Description: orange em2 Virtual Machines[0m
   Link-level type: Ethernet, MTU: [4m1[24m514, LAN-PHY mode, Speed: Auto, Duplex: Auto,
   BPDU Error: None, MAC-REWRITE Error: None, Loopback: Disabled, Source filtering: Disabled,
   Flow control: Enabled, Auto-negotiation: Enabled, Remote fault: Online, Media type: Copper,
@@ -175,7 +175,7 @@ user@swXX> show interfaces
 
 [1;31mPhysical interface: ge-0/0/5, Enabled, Physical link is Down[0m
   Interface index: 151, SNMP ifIndex: 512
-  Description: sw01 ether1
+[36m  Description: sw01 ether1[0m
   Link-level type: Ethernet, MTU: [4m8[24m018, LAN-PHY mode, Speed: [4m1[24m000mbps, Duplex: Auto,
   BPDU Error: None, MAC-REWRITE Error: None, Loopback: Disabled, Source filtering: Disabled,
   Flow control: Disabled, Auto-negotiation: Enabled, Remote fault: Online, Media type: Copper,
@@ -198,7 +198,7 @@ user@swXX> show interfaces
 
 [32mPhysical interface: ge-0/0/6, Enabled, Physical link is Up[0m
   Interface index: 152, SNMP ifIndex: 514
-  Description: To sw08 Et11
+[36m  Description: To sw08 Et11[0m
   Link-level type: Ethernet, MTU: [4m8[24m018, LAN-PHY mode, Speed: [4m1[24m000mbps, Duplex: Auto,
   BPDU Error: None, MAC-REWRITE Error: None, Loopback: Disabled, Source filtering: Disabled,
   Flow control: Disabled, Auto-negotiation: Enabled, Remote fault: Online, Media type: Copper,
@@ -221,7 +221,7 @@ user@swXX> show interfaces
 
 [1;31mPhysical interface: ge-0/0/7, Enabled, Physical link is Down[0m
   Interface index: 153, SNMP ifIndex: 516
-  Description: gray eth1
+[36m  Description: gray eth1[0m
   Link-level type: Ethernet, MTU: [4m8[24m018, LAN-PHY mode, Speed: Auto, Duplex: Auto,
   BPDU Error: None, MAC-REWRITE Error: None, Loopback: Disabled, Source filtering: Disabled,
   Flow control: Enabled, Auto-negotiation: Enabled, Remote fault: Online, Media type: Copper,
@@ -247,7 +247,7 @@ user@swXX> show interfaces
 
 [1;31mPhysical interface: ge-0/0/8, Enabled, Physical link is Down[0m
   Interface index: 154, SNMP ifIndex: 518
-  Description: orange em1 VLAN1 interface
+[36m  Description: orange em1 VLAN1 interface[0m
   Link-level type: Ethernet, MTU: [4m8[24m018, LAN-PHY mode, Speed: Auto, Duplex: Auto,
   BPDU Error: None, MAC-REWRITE Error: None, Loopback: Disabled, Source filtering: Disabled,
   Flow control: Enabled, Auto-negotiation: Enabled, Remote fault: Online, Media type: Copper,
@@ -273,7 +273,7 @@ user@swXX> show interfaces
 
 [1;31mPhysical interface: ge-0/0/9, Enabled, Physical link is Down[0m
   Interface index: 155, SNMP ifIndex: 520
-  Description: pc2.example.com
+[36m  Description: pc2.example.com[0m
   Link-level type: Ethernet, MTU: [4m1[24m514, LAN-PHY mode, Speed: [4m1[24m000mbps, Duplex: Auto,
   BPDU Error: None, MAC-REWRITE Error: None, Loopback: Disabled, Source filtering: Disabled,
   Flow control: Disabled, Auto-negotiation: Enabled, Remote fault: Online, Media type: Copper,
@@ -296,7 +296,7 @@ user@swXX> show interfaces
 
 [1;31mPhysical interface: ge-0/0/10, Enabled, Physical link is Down[0m
   Interface index: 156, SNMP ifIndex: 522
-  Description: pc2.example.com
+[36m  Description: pc2.example.com[0m
   Link-level type: Ethernet, MTU: [4m1[24m514, LAN-PHY mode, Speed: [4m1[24m000mbps, Duplex: Auto,
   BPDU Error: None, MAC-REWRITE Error: None, Loopback: Disabled, Source filtering: Disabled,
 ---(more)---                                          Flow control: Disabled, Auto-negotiation: Enabled, Remote fault: Online, Media type: Copper,
@@ -319,7 +319,7 @@ user@swXX> show interfaces
 
 [32mPhysical interface: ge-0/0/11, Enabled, Physical link is Up[0m
   Interface index: 157, SNMP ifIndex: 524
-  Description: Terminal
+[36m  Description: Terminal[0m
   Link-level type: Ethernet, MTU: [4m1[24m514, LAN-PHY mode, Speed: Auto, Duplex: Auto,
   BPDU Error: None, MAC-REWRITE Error: None, Loopback: Disabled, Source filtering: Disabled,
   Flow control: Enabled, Auto-negotiation: Enabled, Remote fault: Online, Media type: Copper,
@@ -345,7 +345,7 @@ user@swXX> show interfaces
 
 [32mPhysical interface: ge-1/0/0, Enabled, Physical link is Up[0m
   Interface index: 134, SNMP ifIndex: 540
-  Description: Router
+[36m  Description: Router[0m
   Link-level type: Ethernet, MTU: [4m1[24m602, LAN-PHY mode, Speed: Auto, Duplex: Auto,
   BPDU Error: None, MAC-REWRITE Error: None, Loopback: Disabled, Source filtering: Disabled,
   Flow control: Enabled, Auto-negotiation: Enabled, Remote fault: Online, Media type: Copper,
@@ -371,7 +371,7 @@ user@swXX> show interfaces
 
 [32mPhysical interface: ge-1/0/1, Enabled, Physical link is Up[0m
   Interface index: 135, SNMP ifIndex: 542
-  Description: pc3.example.com
+[36m  Description: pc3.example.com[0m
 ---(more)---                                          Link-level type: Ethernet, MTU: [4m1[24m514, LAN-PHY mode, Speed: Auto, Duplex: Auto,
   BPDU Error: None, MAC-REWRITE Error: None, Loopback: Disabled, Source filtering: Disabled,
   Flow control: Enabled, Auto-negotiation: Enabled, Remote fault: Online, Media type: Copper,
@@ -397,7 +397,7 @@ user@swXX> show interfaces
 
 [32mPhysical interface: ge-1/0/2, Enabled, Physical link is Up[0m
   Interface index: 136, SNMP ifIndex: 548
-  Description: Baz
+[36m  Description: Baz[0m
   Link-level type: Ethernet, MTU: [4m1[24m514, LAN-PHY mode, Speed: Auto, Duplex: Auto,
   BPDU Error: None, MAC-REWRITE Error: None, Loopback: Disabled, Source filtering: Disabled,
   Flow control: Enabled, Auto-negotiation: Enabled, Remote fault: Online, Media type: Copper,
@@ -423,7 +423,7 @@ user@swXX> show interfaces
 
 [1;31mPhysical interface: ge-1/0/3, Enabled, Physical link is Down[0m
   Interface index: 137, SNMP ifIndex: 550
-  Description: Router
+[36m  Description: Router[0m
   Link-level type: Ethernet, MTU: [4m1[24m514, LAN-PHY mode, Speed: Auto, Duplex: Auto,
   BPDU Error: None, MAC-REWRITE Error: None, Loopback: Disabled, Source filtering: Disabled,
   Flow control: Enabled, Auto-negotiation: Enabled, Remote fault: Online, Media type: Copper,
@@ -449,7 +449,7 @@ user@swXX> show interfaces
 
 [32mPhysical interface: ge-1/0/4, Enabled, Physical link is Up[0m
   Interface index: 138, SNMP ifIndex: 552
-  Description: Backup for bak
+[36m  Description: Backup for bak[0m
   Link-level type: Ethernet, MTU: [4m1[24m514, LAN-PHY mode, Speed: Auto, Duplex: Auto,
   BPDU Error: None, MAC-REWRITE Error: None, Loopback: Disabled, Source filtering: Disabled,
   Flow control: Enabled, Auto-negotiation: Enabled, Remote fault: Online, Media type: Copper,
@@ -475,7 +475,7 @@ user@swXX> show interfaces
 
 [1;31mPhysical interface: ge-1/0/5, Enabled, Physical link is Down[0m
   Interface index: 139, SNMP ifIndex: 554
-  Description: Printer
+[36m  Description: Printer[0m
   Link-level type: Ethernet, MTU: [4m1[24m514, LAN-PHY mode, Speed: Auto, Duplex: Auto,
   BPDU Error: None, MAC-REWRITE Error: None, Loopback: Disabled, Source filtering: Disabled,
   Flow control: Enabled, Auto-negotiation: Enabled, Remote fault: Online, Media type: Copper,
@@ -501,7 +501,7 @@ user@swXX> show interfaces
 
 [32mPhysical interface: ge-1/0/6, Enabled, Physical link is Up[0m
   Interface index: 140, SNMP ifIndex: 556
-  Description: Laptop
+[36m  Description: Laptop[0m
   Link-level type: Ethernet, MTU: [4m1[24m514, LAN-PHY mode, Speed: Auto, Duplex: Auto,
   BPDU Error: None, MAC-REWRITE Error: None, Loopback: Disabled, Source filtering: Disabled,
   Flow control: Enabled, Auto-negotiation: Enabled, Remote fault: Online, Media type: Copper,
@@ -527,7 +527,7 @@ user@swXX> show interfaces
 
 [1;31mPhysical interface: ge-1/0/7, Enabled, Physical link is Down[0m
   Interface index: 141, SNMP ifIndex: 558
-  Description: desk
+[36m  Description: desk[0m
   Link-level type: Ethernet, MTU: [4m8[24m018, LAN-PHY mode, Speed: Auto, Duplex: Auto,
   BPDU Error: None, MAC-REWRITE Error: None, Loopback: Disabled, Source filtering: Disabled,
   Flow control: Enabled, Auto-negotiation: Enabled, Remote fault: Online, Media type: Copper,
@@ -553,7 +553,7 @@ user@swXX> show interfaces
 
 [1;31mPhysical interface: ge-1/0/8, Enabled, Physical link is Down[0m
   Interface index: 142, SNMP ifIndex: 560
-  Description: baz
+[36m  Description: baz[0m
   Link-level type: Ethernet, MTU: [4m1[24m514, LAN-PHY mode, Speed: Auto, Duplex: Auto,
   BPDU Error: None, MAC-REWRITE Error: None, Loopback: Disabled, Source filtering: Disabled,
   Flow control: Enabled, Auto-negotiation: Enabled, Remote fault: Online, Media type: Copper,
@@ -579,7 +579,7 @@ user@swXX> show interfaces
 
 [1;31mPhysical interface: ge-1/0/9, Enabled, Physical link is Down[0m
   Interface index: 143, SNMP ifIndex: 562
-  Description: quux
+[36m  Description: quux[0m
   Link-level type: Ethernet, MTU: [4m1[24m514, LAN-PHY mode, Speed: Auto, Duplex: Auto,
   BPDU Error: None, MAC-REWRITE Error: None, Loopback: Disabled, Source filtering: Disabled,
   Flow control: Enabled, Auto-negotiation: Enabled, Remote fault: Online, Media type: Copper,
@@ -605,7 +605,7 @@ user@swXX> show interfaces
 
 [32mPhysical interface: ge-1/0/10, Enabled, Physical link is Up[0m
   Interface index: 144, SNMP ifIndex: 544
-  Description: quuux
+[36m  Description: quuux[0m
   Link-level type: Ethernet, MTU: [4m1[24m514, LAN-PHY mode, Speed: Auto, Duplex: Auto,
   BPDU Error: None, MAC-REWRITE Error: None, Loopback: Disabled, Source filtering: Disabled,
   Flow control: Enabled, Auto-negotiation: Enabled, Remote fault: Online, Media type: Copper,
@@ -631,7 +631,7 @@ user@swXX> show interfaces
 
 [1;31mPhysical interface: ge-1/0/11, Enabled, Physical link is Down[0m
   Interface index: 145, SNMP ifIndex: 546
-  Description: quuuux
+[36m  Description: quuuux[0m
   Link-level type: Ethernet, MTU: [4m1[24m514, LAN-PHY mode, Speed: Auto, Duplex: Auto,
   BPDU Error: None, MAC-REWRITE Error: None, Loopback: Disabled, Source filtering: Disabled,
   Flow control: Enabled, Auto-negotiation: Enabled, Remote fault: Online, Media type: Copper,
@@ -657,7 +657,7 @@ user@swXX> show interfaces
 
 [1;31mPhysical interface: ae0, Enabled, Physical link is Down[0m
   Interface index: 128, SNMP ifIndex: 530
-  Description: To sw01
+[36m  Description: To sw01[0m
   Link-level type: Ethernet, MTU: [4m8[24m018, Speed: Unspecified, BPDU Error: None,
   MAC-REWRITE Error: None, Loopback: Disabled, Source filtering: Disabled,
   Flow control: Disabled, Minimum links needed: 1, Minimum bandwidth needed: 1bps
@@ -683,7 +683,7 @@ user@swXX> show interfaces
 
 [1;31mPhysical interface: ae1, Enabled, Physical link is Down[0m
   Interface index: 129, SNMP ifIndex: 532
-  Description: pc2.example.com
+[36m  Description: pc2.example.com[0m
   Link-level type: Ethernet, MTU: [4m1[24m514, Speed: Unspecified, BPDU Error: None,
   MAC-REWRITE Error: None, Loopback: Disabled, Source filtering: Disabled,
   Flow control: Disabled, Minimum links needed: 1, Minimum bandwidth needed: 1bps
@@ -709,7 +709,7 @@ user@swXX> show interfaces
 
 [32mPhysical interface: ae3, Enabled, Physical link is Up[0m
   Interface index: 130, SNMP ifIndex: 535
-  Description: To sw07 Po2
+[36m  Description: To sw07 Po2[0m
   Link-level type: Ethernet, MTU: [4m8[24m018, Speed: 1Gbps, BPDU Error: None,
   MAC-REWRITE Error: None, Loopback: Disabled, Source filtering: Disabled,
   Flow control: Disabled, Minimum links needed: 1, Minimum bandwidth needed: 1bps
@@ -735,7 +735,7 @@ user@swXX> show interfaces
 
 [1;31mPhysical interface: ae4, Enabled, Physical link is Down[0m
   Interface index: 131, SNMP ifIndex: 536
-  Description: Temporary Trunk
+[36m  Description: Temporary Trunk[0m
   Link-level type: Ethernet, MTU: [4m8[24m018, Speed: Unspecified, BPDU Error: None,
 ---(more 76%)---                                          MAC-REWRITE Error: None, Loopback: Disabled, Source filtering: Disabled,
   Flow control: Disabled, Minimum links needed: 1, Minimum bandwidth needed: 1bps

@@ -225,6 +225,9 @@ s/^ ( $INTERFACE \Q is \E \N+ \Q, line protocol is \E \N+          ) $/$self->_c
     $line =~ s/^ ( \Q  Up \E   \N+ ) $/$self->_colorize($1, $GREEN)/exx;
     $line =~ s/^ ( \Q  Down \E \N+ ) $/$self->_colorize($1, $RED)/exx;
 
+    # "show int" description lines
+    $line =~ s/^ ( \Q \E? \Q Description: \E \N+ ) $/$self->_colorize($1, $INFO)/exx;
+
     # "show int" rates
     $line =~
 s/^ ( \Q  \E $NUM \s \w+ \s (?: input | output) \s rate \s $NUM \s \N+ ) $/$self->_colorize($1, $INFO)/exx;

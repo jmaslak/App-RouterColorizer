@@ -81,7 +81,7 @@ TCP Socket Information:
     Congestion Window (cwnd): 10
 
 [36mBGP neighbor is [30m[43m192.0.2.1[0m, remote AS [4m65[24m000, internal link[0m
- Description: "Raku BGP Test Session"
+[36m Description: "Raku BGP Test Session"[0m
   BGP version 4, remote router ID [37m[44m0.0.0.0[0m, VRF default
   Last read never, last write never
   Hold time is 0, keepalive interval is 0 seconds
@@ -350,7 +350,7 @@ TCP Socket Information:
 kswXX#\swXX#show int
 [?1h=[32mEthernet1 is up, line protocol is up (connected)[0m
   Hardware is Ethernet, address is 012d.456e.7114 (bia 012d.456e.7114)
-  Description: sw05 port 1
+[36m  Description: sw05 port 1[0m
   Member of Port-Channel3
   Ethernet MTU [4m9[24m214 bytes, BW 1[4m000[24m000 kbit
   Full-duplex, 1Gb/s, auto negotiation: on, uni-link: n/a
@@ -372,7 +372,7 @@ TCP Socket Information:
 [36m     0 PAUSE output[0m
 [32mEthernet2 is up, line protocol is up (connected)[0m
   Hardware is Ethernet, address is 012d.456e.7115 (bia 012d.456e.7115)
-  Description: Closet AP
+[36m  Description: Closet AP[0m
   Ethernet MTU [4m9[24m214 bytes, BW 1[4m000[24m000 kbit
   Full-duplex, 1Gb/s, auto negotiation: on, uni-link: n/a
 [32m  Up 36 days, 4 hours, 32 minutes, 12 seconds[0m
@@ -393,7 +393,7 @@ TCP Socket Information:
 [36m     0 PAUSE output[0m
 [1;31mEthernet3 is down, line protocol is down (notconnect)[0m
   Hardware is Ethernet, address is 012d.456e.7116 (bia 012d.456e.7116)
-  Description: sw05 unusued
+[36m  Description: sw05 unusued[0m
   Member of Port-Channel3
   Ethernet MTU [4m9[24m214 bytes
   Auto-duplex, Auto-speed, auto negotiation: on, uni-link: n/a
@@ -415,7 +415,7 @@ TCP Socket Information:
 [36m     0 PAUSE output[0m
 [32mEthernet4 is up, line protocol is up (connected)[0m
   Hardware is Ethernet, address is 012d.456e.7117 (bia 012d.456e.7117)
-  Description: Closet Camera
+[36m  Description: Closet Camera[0m
   Ethernet MTU [4m9[24m214 bytes, BW [4m100[24m000 kbit
   Full-duplex, 100Mb/s, auto negotiation: on, uni-link: n/a
 [32m  Up 110 days, 23 hours, 30 minutes, 36 seconds[0m
@@ -436,7 +436,7 @@ TCP Socket Information:
 [36m     0 PAUSE output[0m
 [32mEthernet5 is up, line protocol is up (connected)[0m
   Hardware is Ethernet, address is 012d.456e.7118 (bia 012d.456e.7118)
-  Description: Another Office PC
+[36m  Description: Another Office PC[0m
   Ethernet MTU [4m9[24m214 bytes, BW [4m100[24m000 kbit
   Full-duplex, 100Mb/s, auto negotiation: on, uni-link: n/a
 [32m  Up 202 days, 21 hours, 26 minutes, 52 seconds[0m
@@ -477,7 +477,7 @@ TCP Socket Information:
 [36m     0 PAUSE output[0m
 [32mEthernet7 is up, line protocol is up (connected)[0m
   Hardware is Ethernet, address is 012d.456e.711a (bia 012d.456e.711a)
-  Description: Another Office Printer
+[36m  Description: Another Office Printer[0m
   Ethernet MTU [4m9[24m214 bytes, BW [4m100[24m000 kbit
   Full-duplex, 100Mb/s, auto negotiation: on, uni-link: n/a
 [32m  Up 47 days, 12 hours, 25 minutes, 56 seconds[0m
@@ -518,7 +518,7 @@ TCP Socket Information:
 [36m     0 PAUSE output[0m
 [32mEthernet9 is up, line protocol is up (connected)[0m
   Hardware is Ethernet, address is 012d.456e.711c (bia 012d.456e.711c)
-  Description: Another Router
+[36m  Description: Another Router[0m
   Ethernet MTU [4m9[24m214 bytes, BW 1[4m000[24m000 kbit
   Full-duplex, 1Gb/s, auto negotiation: on, uni-link: n/a
 [32m  Up 3 days, 9 hours, 32 minutes, 8 seconds[0m
@@ -559,7 +559,7 @@ TCP Socket Information:
 [36m     0 PAUSE output[0m
 [32mEthernet11 is up, line protocol is up (connected)[0m
   Hardware is Ethernet, address is 012d.456e.711e (bia 012d.456e.711e)
-  Description: Uplink to switch ge-something
+[36m  Description: Uplink to switch ge-something[0m
   Member of Port-Channel5
   Ethernet MTU [4m9[24m214 bytes, BW 1[4m000[24m000 kbit
   Full-duplex, 1Gb/s, auto negotiation: on, uni-link: n/a
@@ -601,7 +601,7 @@ TCP Socket Information:
 [36m     0 PAUSE output[0m
 [32mEthernet13 is up, line protocol is up (connected)[0m
   Hardware is Ethernet, address is 012d.456e.7120 (bia 012d.456e.7120)
-  Description: Router Eth1 DSL
+[36m  Description: Router Eth1 DSL[0m
   Ethernet MTU [4m9[24m214 bytes, BW 1[4m000[24m000 kbit
   Full-duplex, 1Gb/s, auto negotiation: on, uni-link: n/a
 [32m  Up 23 days, 14 hours, 40 minutes, 7 seconds[0m
@@ -642,7 +642,7 @@ TCP Socket Information:
 [36m     0 PAUSE output[0m
 [32mEthernet15 is up, line protocol is up (connected)[0m
   Hardware is Ethernet, address is 012d.456e.7122 (bia 012d.456e.7122)
-  Description: Router Et2 Unused
+[36m  Description: Router Et2 Unused[0m
   Ethernet MTU [4m9[24m214 bytes, BW 1[4m000[24m000 kbit
   Full-duplex, 1Gb/s, auto negotiation: on, uni-link: n/a
 [32m  Up 23 days, 14 hours, 40 minutes, 7 seconds[0m
@@ -663,7 +663,7 @@ TCP Socket Information:
 [36m     0 PAUSE output[0m
 [32mEthernet16 is up, line protocol is up (connected)[0m
   Hardware is Ethernet, address is 012d.456e.7123 (bia 012d.456e.7123)
-  Description: Router
+[36m  Description: Router[0m
   Ethernet MTU [4m9[24m214 bytes, BW 1[4m000[24m000 kbit
   Full-duplex, 1Gb/s, auto negotiation: on, uni-link: n/a
 [32m  Up 23 days, 14 hours, 40 minutes, 1 second[0m
@@ -684,7 +684,7 @@ TCP Socket Information:
 [36m     0 PAUSE output[0m
 [32mEthernet17 is up, line protocol is up (connected)[0m
   Hardware is Ethernet, address is 012d.456e.7124 (bia 012d.456e.7124)
-  Description: Router Et3 Unused
+[36m  Description: Router Et3 Unused[0m
   Ethernet MTU [4m9[24m214 bytes, BW 1[4m000[24m000 kbit
   Full-duplex, 1Gb/s, auto negotiation: on, uni-link: n/a
 [32m  Up 23 days, 14 hours, 40 minutes, 7 seconds[0m
@@ -705,7 +705,7 @@ TCP Socket Information:
 [36m     0 PAUSE output[0m
 [32mEthernet18 is up, line protocol is up (connected)[0m
   Hardware is Ethernet, address is 012d.456e.7125 (bia 012d.456e.7125)
-  Description: Router Et4 Unusued
+[36m  Description: Router Et4 Unusued[0m
   Ethernet MTU [4m9[24m214 bytes, BW 1[4m000[24m000 kbit
   Full-duplex, 1Gb/s, auto negotiation: on, uni-link: n/a
 [32m  Up 23 days, 14 hours, 40 minutes, 7 seconds[0m
@@ -726,7 +726,7 @@ TCP Socket Information:
 [36m     0 PAUSE output[0m
 [32mEthernet19 is up, line protocol is up (connected)[0m
   Hardware is Ethernet, address is 012d.456e.7126 (bia 012d.456e.7126)
-  Description: pc1.site1.example.com
+[36m  Description: pc1.site1.example.com[0m
   Ethernet MTU [4m9[24m214 bytes, BW 1[4m000[24m000 kbit
   Full-duplex, 1Gb/s, auto negotiation: on, uni-link: n/a
 [32m  Up 202 days, 21 hours, 26 minutes, 52 seconds[0m
@@ -1187,7 +1187,7 @@ TCP Socket Information:
 [36m     0 PAUSE output[0m
 [32mEthernet42 is up, line protocol is up (connected)[0m
   Hardware is Ethernet, address is 012d.456e.713d (bia 012d.456e.713d)
-  Description: pc1.site1.example.com vmnic8
+[36m  Description: pc1.site1.example.com vmnic8[0m
   Member of Port-Channel6
   Ethernet MTU [4m9[24m214 bytes, BW 10[4m000[24m000 kbit
   Full-duplex, 10Gb/s, auto negotiation: on, uni-link: n/a
@@ -1209,7 +1209,7 @@ TCP Socket Information:
 [36m     0 PAUSE output[0m
 [32mEthernet43 is up, line protocol is up (connected)[0m
   Hardware is Ethernet, address is 012d.456e.713e (bia 012d.456e.713e)
-  Description: pc1.site1.example.com vmnic9
+[36m  Description: pc1.site1.example.com vmnic9[0m
   Member of Port-Channel6
   Ethernet MTU [4m9[24m214 bytes, BW 10[4m000[24m000 kbit
   Full-duplex, 10Gb/s, auto negotiation: on, uni-link: n/a
@@ -1231,7 +1231,7 @@ TCP Socket Information:
 [36m     0 PAUSE output[0m
 [32mEthernet44 is up, line protocol is up (connected)[0m
   Hardware is Ethernet, address is 012d.456e.713f (bia 012d.456e.713f)
-  Description: Foo Another Connection
+[36m  Description: Foo Another Connection[0m
   Member of Port-Channel1
   Ethernet MTU [4m9[24m214 bytes, BW 10[4m000[24m000 kbit
   Full-duplex, 10Gb/s, auto negotiation: on, uni-link: n/a
@@ -1253,7 +1253,7 @@ TCP Socket Information:
 [36m     0 PAUSE output[0m
 [32mEthernet45 is up, line protocol is up (connected)[0m
   Hardware is Ethernet, address is 012d.456e.7140 (bia 012d.456e.7140)
-  Description: Mid-span POE Injector Management
+[36m  Description: Mid-span POE Injector Management[0m
   Ethernet MTU [4m9[24m214 bytes, BW [4m100[24m000 kbit
   Full-duplex, 100Mb/s, auto negotiation: on, uni-link: n/a
 [32m  Up 202 days, 21 hours, 26 minutes, 52 seconds[0m
@@ -1274,7 +1274,7 @@ TCP Socket Information:
 [36m     0 PAUSE output[0m
 [32mEthernet46 is up, line protocol is up (connected)[0m
   Hardware is Ethernet, address is 012d.456e.7141 (bia 012d.456e.7141)
-  Description: Closet UPS Management
+[36m  Description: Closet UPS Management[0m
   Ethernet MTU [4m9[24m214 bytes, BW [4m100[24m000 kbit
   Full-duplex, 100Mb/s, auto negotiation: on, uni-link: n/a
 [32m  Up 85 days, 19 hours, 38 minutes, 38 seconds[0m
@@ -1335,7 +1335,7 @@ TCP Socket Information:
 [36m     0 PAUSE output[0m
 [32mEthernet49/1 is up, line protocol is up (connected)[0m
   Hardware is Ethernet, address is 012d.456e.7144 (bia 012d.456e.7144)
-  Description: Uplink to sw07 te1/0/2
+[36m  Description: Uplink to sw07 te1/0/2[0m
   Member of Port-Channel2
   Ethernet MTU [4m9[24m214 bytes, BW 10[4m000[24m000 kbit
   Full-duplex, 10Gb/s, auto negotiation: off, uni-link: n/a
@@ -1357,7 +1357,7 @@ TCP Socket Information:
 [36m     0 PAUSE output[0m
 [32mEthernet49/2 is up, line protocol is up (connected)[0m
   Hardware is Ethernet, address is 012d.456e.7145 (bia 012d.456e.7145)
-  Description: pc2.site1.example.com
+[36m  Description: pc2.site1.example.com[0m
   Ethernet MTU [4m9[24m214 bytes, BW 10[4m000[24m000 kbit
   Full-duplex, 10Gb/s, auto negotiation: off, uni-link: n/a
 [32m  Up 26 days, 15 hours, 12 minutes, 50 seconds[0m
@@ -1378,7 +1378,7 @@ TCP Socket Information:
 [36m     0 PAUSE output[0m
 [32mEthernet49/3 is up, line protocol is up (connected)[0m
   Hardware is Ethernet, address is 012d.456e.7146 (bia 012d.456e.7146)
-  Description: Baz Desktop
+[36m  Description: Baz Desktop[0m
   Ethernet MTU [4m9[24m214 bytes, BW 10[4m000[24m000 kbit
   Full-duplex, 10Gb/s, auto negotiation: off, uni-link: n/a
 [32m  Up 10 days, 16 hours, 36 minutes, 47 seconds[0m
@@ -1399,7 +1399,7 @@ TCP Socket Information:
 [36m     0 PAUSE output[0m
 [32mEthernet49/4 is up, line protocol is up (connected)[0m
   Hardware is Ethernet, address is 012d.456e.7147 (bia 012d.456e.7147)
-  Description: Uplink to sw01 sfp-sfpplus1
+[36m  Description: Uplink to sw01 sfp-sfpplus1[0m
   Member of Port-Channel4
   Ethernet MTU [4m9[24m214 bytes, BW 10[4m000[24m000 kbit
   Full-duplex, 10Gb/s, auto negotiation: off, uni-link: n/a
@@ -1421,7 +1421,7 @@ TCP Socket Information:
 [36m     0 PAUSE output[0m
 [32mEthernet49/5 is up, line protocol is up (connected)[0m
   Hardware is Ethernet, address is 012d.456e.7148 (bia 012d.456e.7148)
-  Description: Uplink to sw07 te1/0/1
+[36m  Description: Uplink to sw07 te1/0/1[0m
   Member of Port-Channel2
   Ethernet MTU [4m9[24m214 bytes, BW 10[4m000[24m000 kbit
   Full-duplex, 10Gb/s, auto negotiation: off, uni-link: n/a
@@ -1443,7 +1443,7 @@ TCP Socket Information:
 [36m     0 PAUSE output[0m
 [32mEthernet49/6 is up, line protocol is up (connected)[0m
   Hardware is Ethernet, address is 012d.456e.7149 (bia 012d.456e.7149)
-  Description: Uplink to sw01 sfp-sfpplus2
+[36m  Description: Uplink to sw01 sfp-sfpplus2[0m
   Member of Port-Channel4
   Ethernet MTU [4m9[24m214 bytes, BW 10[4m000[24m000 kbit
   Full-duplex, 10Gb/s, auto negotiation: off, uni-link: n/a
@@ -1465,7 +1465,7 @@ TCP Socket Information:
 [36m     0 PAUSE output[0m
 [32mEthernet49/7 is up, line protocol is up (connected)[0m
   Hardware is Ethernet, address is 012d.456e.714a (bia 012d.456e.714a)
-  Description: pc2.example.com
+[36m  Description: pc2.example.com[0m
   Member of Port-Channel7
   Ethernet MTU [4m9[24m214 bytes, BW 10[4m000[24m000 kbit
   Full-duplex, 10Gb/s, auto negotiation: off, uni-link: n/a
@@ -1673,7 +1673,7 @@ TCP Socket Information:
 [36m     0 PAUSE output[0m
 [32mPort-Channel1 is up, line protocol is up (connected)[0m
   Hardware is Port-Channel, address is 012d.456e.713f
-  Description: To Foo
+[36m  Description: To Foo[0m
   Ethernet MTU [4m9[24m214 bytes, BW 10[4m000[24m000 kbit
   Full-duplex, 10Gb/s 
   Active members in this channel: 1
@@ -1692,7 +1692,7 @@ TCP Socket Information:
 [32m     0 output errors, 0 output discards[0m
 [32mPort-Channel2 is up, line protocol is up (connected)[0m
   Hardware is Port-Channel, address is 012d.456e.7144
-  Description: sw07 po1
+[36m  Description: sw07 po1[0m
   Ethernet MTU [4m9[24m214 bytes, BW 20[4m000[24m000 kbit
   Full-duplex, 20Gb/s 
   Active members in this channel: 2
@@ -1712,7 +1712,7 @@ TCP Socket Information:
 [32m     0 output errors, 0 output discards[0m
 [32mPort-Channel3 is up, line protocol is up (connected)[0m
   Hardware is Port-Channel, address is 012d.456e.7114
-  Description: To sw05 (A Room)
+[36m  Description: To sw05 (A Room)[0m
   Ethernet MTU [4m9[24m214 bytes, BW 1[4m000[24m000 kbit
   Full-duplex, 1Gb/s 
   Active members in this channel: 1
@@ -1731,7 +1731,7 @@ TCP Socket Information:
 [1;31m     0 output errors, [4m3[24m387 output discards[0m
 [32mPort-Channel4 is up, line protocol is up (connected)[0m
   Hardware is Port-Channel, address is 012d.456e.7147
-  Description: sw01 bond1
+[36m  Description: sw01 bond1[0m
   Ethernet MTU [4m9[24m214 bytes, BW 20[4m000[24m000 kbit
   Full-duplex, 20Gb/s 
   Active members in this channel: 2
@@ -1751,7 +1751,7 @@ TCP Socket Information:
 [32m     0 output errors, 0 output discards[0m
 [32mPort-Channel5 is up, line protocol is up (connected)[0m
   Hardware is Port-Channel, address is 012d.456e.711e
-  Description: LAG to sw02
+[36m  Description: LAG to sw02[0m
   Ethernet MTU [4m9[24m214 bytes, BW 1[4m000[24m000 kbit
   Full-duplex, 1Gb/s 
   Active members in this channel: 1
@@ -1770,7 +1770,7 @@ TCP Socket Information:
 [1;31m     0 output errors, 179 output discards[0m
 [32mPort-Channel6 is up, line protocol is up (connected)[0m
   Hardware is Port-Channel, address is 012d.456e.713d
-  Description: LAG to pc1.site1.example.com vswitch0
+[36m  Description: LAG to pc1.site1.example.com vswitch0[0m
   Ethernet MTU [4m9[24m214 bytes, BW 20[4m000[24m000 kbit
   Full-duplex, 20Gb/s 
   Active members in this channel: 2
@@ -1790,7 +1790,7 @@ TCP Socket Information:
 [32m     0 output errors, 0 output discards[0m
 [32mPort-Channel7 is up, line protocol is up (connected)[0m
   Hardware is Port-Channel, address is 012d.456e.714a
-  Description: LAG to pc2.example.com
+[36m  Description: LAG to pc2.example.com[0m
   Ethernet MTU [4m9[24m214 bytes, BW 10[4m000[24m000 kbit
   Full-duplex, 10Gb/s 
   Active members in this channel: 1
