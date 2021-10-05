@@ -51,7 +51,7 @@ our @BGCOLORS = (
 our $NUM      = qr/$RE{num}{real}/;
 our $INT      = qr/$RE{num}{int}{-sign => ''}/;
 our $POSINT   = qr/(?!0)$INT/;
-our $LOWLIGHT = qr/ (?: -30\. [0-9]{2} ) | (?: [ -2 [5-9] \. [0-9]{2} ) /xx;
+our $LOWLIGHT = qr/ (?: -30\. [0-9]{2} ) | (?: -2 [5-9] \. [0-9]{2} ) /xx;
 our $LIGHT    = qr/ (?: $NUM ) | (?: N\/A ) /xx;
 
 our $IPV4CIDR = qr/ $RE{net}{IPv4}

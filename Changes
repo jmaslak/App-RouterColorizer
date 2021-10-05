@@ -1,4 +1,6 @@
 {{$NEXT}}
+ Joelle Maslak <jmaslak@antelope.net>
+ * [bugfix] Fixed regex to properly color transceiver rx light levels > 1.00
 
 1.212302  2021-08-18 15:49:37+00:00 UTC
  Joelle Maslak <jmaslak@antelope.net>
