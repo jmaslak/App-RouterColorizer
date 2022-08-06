@@ -212,7 +212,7 @@ s/^ ( \Q  Configured maximum total number of routes is \E \d+ \Q, warning limit 
     }
 
     my $INTERFACE = qr/ [A-Z] \S+ /xx;
-    my $INTSHORT  = qr/ [A-Z][a-z][0-9] \N+ /xx;
+    my $INTSHORT  = qr/ [A-Z][a-z][0-9] \S* /xx;
 
     # "show int" up/down
     $line =~
@@ -246,13 +246,19 @@ s/^ ( $INTSHORT \s+ \Qadmin down\E \s+ \S+ (?: \s+ \N+)? ) $/$self->_colorize($1
     $line =~
       s/^ ( $INTSHORT \s+ down           \s+ \S+ (?: \s+ \N+)? ) $/$self->_colorize($1, $RED)/exx;
 
-    # "show int transceiver"
+    # "show int transceiver" (Arista)
     $line =~
 s/^ ( $INTSHORT (?: \s+ $LIGHT){4} \s+ $LOWLIGHT \s+ \S+ \s ago ) $/$self->_colorize($1, $RED)/exx;
     $line =~
 s/^ ( $INTSHORT (?: \s+ $LIGHT){5}               \s+ \S+ \s ago ) $/$self->_colorize($1, $INFO)/exx;
     $line =~
 s/^ ( $INTSHORT (?: \s+ N\/A  ){6} \s*                          ) $/$self->_colorize($1, $ORANGE)/exx;
+
+    # "show int transceiver" (Cisco)
+    $line =~
+s/^ ( $INTSHORT (?: \s+ $LIGHT){3} \s+ $LOWLIGHT ) \s+ $/$self->_colorize($1, $RED)/exx;
+    $line =~
+s/^ ( $INTSHORT (?: \s+ $LIGHT){4}               ) \s+ $/$self->_colorize($1, $INFO)/exx;
 
     #
     # LLDP Neighbors Detail

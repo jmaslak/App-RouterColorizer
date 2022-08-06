@@ -1,4 +1,7 @@
 {{$NEXT}}
+ Joelle Maslak <jmaslak@antelope.net>
+ * [feature] Add colorization of "show interface transceiver" for Cisco
+ * [bugfix] Improve INTSHORT to not be too greedy
 
 1.212780  2021-10-05 16:22:33+00:00 UTC
  Joelle Maslak <jmaslak@antelope.net>
