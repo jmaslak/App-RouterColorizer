@@ -1,7 +1,7 @@
 #!/usr/bin/env perl
 
 #
-# Copyright (C) 2021 Joelle Maslak
+# Copyright (C) 2021-2022 Joelle Maslak
 # All Rights Reserved - See License
 #
 
