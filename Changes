@@ -1,4 +1,6 @@
 {{$NEXT}}
+
+1.222180  2022-08-06 01:57:32+00:00 UTC
  Joelle Maslak <jmaslak@antelope.net>
  * [feature] Add colorization of "show interface transceiver" for Cisco
  * [bugfix] Improve INTSHORT to not be too greedy
