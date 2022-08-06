@@ -1,0 +1,43 @@
+sw07#show int status
+
+Port      Name               Status       Vlan       Duplex  Speed Type 
+[32mGi1/0/1   red.antelope.net   connected    1          a-full a-[4m1[24m000 10/100/[4m1[24m000BaseTX[0m
+[1;31mGi1/0/2   to Sw02            notconnect   210          auto   auto 10/100/[4m1[24m000BaseTX[0m
+[33mGi1/0/3                      disabled     210          auto   auto 10/100/[4m1[24m000BaseTX[0m
+[1;31mGi1/0/4   BAD::POE-ERRORS    notconnect   1            auto   auto 10/100/[4m1[24m000BaseTX[0m
+[1;31mGi1/0/5                      notconnect   1            auto   auto 10/100/[4m1[24m000BaseTX[0m
+[1;31mGi1/0/6                      notconnect   1            auto   auto 10/100/[4m1[24m000BaseTX[0m
+[32mTe1/0/7   NNNNNNN Mac Mini   connected    210        a-full  a-10G 100/1G/2.5G/5G/10GBaseT[0m
+[32mTe1/0/8   802.11AC Office AP connected    trunk      a-full a-[4m5[24m000 100/1G/2.5G/5G/10GBaseT[0m
+[1;31mTe1/0/1   To sw08 et49/5     notconnect   1            full    10G SFP-10GBase-SR[0m
+[32mTe1/0/2   To sw08 et49/1     connected    trunk        full    10G SFP-10GBase-SR[0m
+[32mPo1       LAG to sw08        connected    trunk      a-full    10G [0m
+sw07#show int transceiver
+If device is externally calibrated, only calibrated values are printed.
+++ : high alarm, +  : high warning, -  : low warning, -- : low alarm.
+NA or N/A: not applicable, Tx: transmit, Rx: receive.
+mA: milliamperes, dBm: decibels (milliwatts).
+
+                                 Optical   Optical
+           Temperature  Voltage  Tx Power  Rx Power
+Port       (Celsius)    (Volts)  (dBm)     (dBm)
+---------  -----------  -------  --------  --------
+[36mTe1/0/1      56.0       3.35      -3.2     -23.7[0m
+[36mTe1/0/2      54.0       3.28      -1.8      -1.7[0m
+
+
+sw07#show int transceiver
+If device is externally calibrated, only calibrated values are printed.
+++ : high alarm, +  : high warning, -  : low warning, -- : low alarm.
+NA or N/A: not applicable, Tx: transmit, Rx: receive.
+mA: milliamperes, dBm: decibels (milliwatts).
+
+                                 Optical   Optical
+           Temperature  Voltage  Tx Power  Rx Power
+Port       (Celsius)    (Volts)  (dBm)     (dBm)
+---------  -----------  -------  --------  --------
+[1;31mTe1/0/1      56.0       3.35      -3.2     -40.0[0m
+[36mTe1/0/2      54.0       3.28      -1.8      -1.7[0m
+
+
+sw07#exit
