@@ -75,8 +75,8 @@ our $IPV6CIDR = qr/ $RE{net}{IPv6}
                     )?
                 /xx;
 
-our @INTERFACE_IGNORES = ( "bytes", "packets input", "packets output", );
-our @INTERFACE_INFOS   = ( "PAUSE input", "PAUSE output", );
+our @INTERFACE_IGNORES = ( "bytes", "packets input", "packets output", "multicast" );
+our @INTERFACE_INFOS   = ( "PAUSE input", "PAUSE output", "pause input");
 
 our @bgcolors = (
     "\e[30m\e[47m",    # black on white
@@ -216,11 +216,11 @@ s/^ ( \Q  Configured maximum total number of routes is \E \d+ \Q, warning limit 
 
     # "show int" up/down
     $line =~
-s/^ ( $INTERFACE \Q is up, line protocol is up\E \Q (connected)\E? ) $/$self->_colorize($1, $GREEN)/exx;
+s/^ ( $INTERFACE \Q is up, line protocol is up\E (:? \Q (connected)\E )? \s? ) $/$self->_colorize($1, $GREEN)/exx;
     $line =~
-s/^ ( $INTERFACE \Q is administratively down,\E \N+                ) $/$self->_colorize($1, $ORANGE)/exx;
+s/^ ( $INTERFACE \Q is administratively down,\E \N+                          ) $/$self->_colorize($1, $ORANGE)/exx;
     $line =~
-s/^ ( $INTERFACE \Q is \E \N+ \Q, line protocol is \E \N+          ) $/$self->_colorize($1, $RED)/exx;
+s/^ ( $INTERFACE \Q is \E \N+ \Q, line protocol is \E \N+                    ) $/$self->_colorize($1, $RED)/exx;
 
     $line =~ s/^ ( \Q  Up \E   \N+ ) $/$self->_colorize($1, $GREEN)/exx;
     $line =~ s/^ ( \Q  Down \E \N+ ) $/$self->_colorize($1, $RED)/exx;

@@ -1,4 +1,6 @@
 {{$NEXT}}
+ Joelle Maslak <jmaslak@antelope.net>
+ * [bugfix] Fix improper Cisco "show interface" highlighting
 
 1.222180  2022-08-06 01:57:32+00:00 UTC
  Joelle Maslak <jmaslak@antelope.net>
