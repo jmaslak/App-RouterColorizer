@@ -1,4 +1,6 @@
 {{$NEXT}}
+
+1.222220  2022-08-10 02:49:56+00:00 UTC
  Joelle Maslak <jmaslak@antelope.net>
  * [feature] Add additional JunOS "show interface" colorization
  * [feature] Add aJunOS "show interface diagnostics optics" colorization
