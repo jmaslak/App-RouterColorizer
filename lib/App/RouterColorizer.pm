@@ -76,7 +76,7 @@ our $IPV6CIDR = qr/ $RE{net}{IPv6}
                 /xx;
 
 our @INTERFACE_IGNORES = ( "bytes", "packets input", "packets output", "multicast" );
-our @INTERFACE_INFOS   = ( "PAUSE input", "PAUSE output", "pause input");
+our @INTERFACE_INFOS   = ( "PAUSE input", "PAUSE output", "pause input" );
 
 our @bgcolors = (
     "\e[30m\e[47m",    # black on white
@@ -226,7 +226,7 @@ s/^ ( $INTERFACE \Q is \E \N+ \Q, line protocol is \E \N+                    ) $
     $line =~ s/^ ( \Q  Down \E \N+ ) $/$self->_colorize($1, $RED)/exx;
 
     # "show int" description lines
-    $line =~ s/^ ( \Q \E? \Q Description: \E \N+ ) $/$self->_colorize($1, $INFO)/exx;
+    $line =~ s/^ ( (?: \Q \E|\Q   \E)? \Q Description: \E \N+ ) $/$self->_colorize($1, $INFO)/exx;
 
     # "show int" rates
     $line =~
@@ -256,9 +256,9 @@ s/^ ( $INTSHORT (?: \s+ N\/A  ){6} \s*                          ) $/$self->_colo
 
     # "show int transceiver" (Cisco)
     $line =~
-s/^ ( $INTSHORT (?: \s+ $LIGHT){3} \s+ $LOWLIGHT ) \s+ $/$self->_colorize($1, $RED)/exx;
+      s/^ ( $INTSHORT (?: \s+ $LIGHT){3} \s+ $LOWLIGHT ) \s+ $/$self->_colorize($1, $RED)/exx;
     $line =~
-s/^ ( $INTSHORT (?: \s+ $LIGHT){4}               ) \s+ $/$self->_colorize($1, $INFO)/exx;
+      s/^ ( $INTSHORT (?: \s+ $LIGHT){4}               ) \s+ $/$self->_colorize($1, $INFO)/exx;
 
     #
     # LLDP Neighbors Detail
@@ -289,6 +289,10 @@ s/^ ( \QPhysical interface: \E \S+ \Q Enabled, Physical link is Up\E   ) $/$self
 s/^ ( \QPhysical interface: \E \S+ \Q Enabled, Physical link is Down\E ) $/$self->_colorize($1, $RED)/exx;
     $line =~
 s/^ ( \QPhysical interface: \E \S+ \s \S+ \Q Physical link is Down\E   ) $/$self->_colorize($1, $ORANGE)/exx;
+    $line =~
+s/^ ( \QPhysical interface: \E \S+                                     ) $/$self->_colorize($1, $INFO)/exx;
+
+    $line =~ s/^ ( \Q  Logical interface \E \N+ ) $/$self->_colorize($1, $INFO)/exx;
 
     $line =~ s/^ ( \Q  Input rate     : \E $NUM \N+ ) $/$self->_colorize($1, $INFO)/exx;
     $line =~ s/^ ( \Q  Output rate    : \E $NUM \N+ ) $/$self->_colorize($1, $INFO)/exx;
@@ -314,6 +318,27 @@ s/^ ( \QPhysical interface: \E \S+ \s \S+ \Q Physical link is Down\E   ) $/$self
     $line =~ s/^ (     $ETH     \s+ VCP             ) $/$self->_colorize($1, $GREEN)/exx;
     $line =~ s/^ ( (?: $IFACES) \s+ up \s+ down \N* ) $/$self->_colorize($1, $RED)/exx;
     $line =~ s/^ ( (?: $IFACES) \s+ down \s+ \N*    ) $/$self->_colorize($1, $ORANGE)/exx;
+
+    # Errors
+    $line =~ s/^ ( \Q    Bit errors \E \s+ 0           ) $/$self->_colorize($1, $GREEN)/exx;
+    $line =~ s/^ ( \Q    Bit errors \E \s+ 0           ) $/$self->_colorize($1, $GREEN)/exx;
+    $line =~ s/^ ( \Q    Errored blocks \E \s+ [1-9][0-9]+ ) $/$self->_colorize($1, $RED)/exx;
+    $line =~ s/^ ( \Q    Errored blocks \E \s+ 0           ) $/$self->_colorize($1, $GREEN)/exx;
+    $line =~
+      s/^ ( \Q    FEC \E \S+ \s Errors (?: \s Rate)? \s+ 0   ) $/$self->_colorize($1, $GREEN)/exx;
+    $line =~
+      s/^ ( \Q    FEC \E \S+ \s Errors (?: \s Rate)? \s+ \N+ ) $/$self->_colorize($1, $RED)/exx;
+
+    # show interfaces diagnostics optics
+    $line =~ s/^ ( \Q    Laser output power \E \s+ : \s $NUM \N+ ) $/$self->_colorize($1, $RED)/exx;
+    $line =~
+s/^ ( \Q    Laser output power \E \s+ : \s+ $NUM \Q mW \/ \E $LOWLIGHT \s dBm ) $/$self->_colorize($1, $RED)/exx;
+    $line =~
+s/^ ( \Q    Laser output power \E \s+ : \s+ $NUM \Q mW \/ \E $LIGHT    \s dBm ) $/$self->_colorize($1, $INFO)/exx;
+    $line =~
+s/^ ( \Q    Receiver signal average optical power \E \s+ : \s+ $NUM \Q mW \/ \E $LOWLIGHT \s dBm ) $/$self->_colorize($1, $RED)/exx;
+    $line =~
+s/^ ( \Q    Receiver signal average optical power \E \s+ : \s+ $NUM \Q mW \/ \E $LIGHT    \s dBm ) $/$self->_colorize($1, $INFO)/exx;
 
     return $line;
 }
