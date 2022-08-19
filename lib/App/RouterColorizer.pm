@@ -302,17 +302,21 @@ s/^ ( \QPhysical interface: \E \S+                                     ) $/$self
     $line =~ s/^ ( \Q  Active defects : None\E ) $/$self->_colorize($1, $GREEN)/exx;
     $line =~ s/^ ( \Q  Active defects : \E \N+ ) $/$self->_colorize($1, $RED)/exx;
 
-    my $AE    = qr/ (?: ae [0-9\.]+       ) /xx;
-    my $BME   = qr/ (?: bme [0-9\.]+      ) /xx;
-    my $ETH   = qr/ (?: [gx] e- [0-9\/\.]+) /xx;
-    my $JSRV  = qr/ (?: jsrv [0-9\.]*     ) /xx;
-    my $LO    = qr/ (?: lo [0-9\.]+       ) /xx;
-    my $ME    = qr/ (?: me [0-9\.]+       ) /xx;
-    my $VCP   = qr/ (?: vcp- [0-9\/\.]+   ) /xx;
-    my $VLAN  = qr/ (?: vlan\. [0-9]+     ) /xx;
-    my $OTHER = qr/ dsc | gre | ipip | jsrv | lsi | mtun | pimd | pime | tap | vlan | vme /xx;
+    my $AE    = qr/ (?: ae [0-9\.]+          ) /xx;
+    my $BME   = qr/ (?: bme [0-9\.]+         ) /xx;
+    my $CBP   = qr/ (?: cbp [0-9\.]+         ) /xx;
+    my $ETH   = qr/ (?: [gx] e- [0-9\/\.]+   ) /xx;
+    my $IRB   = qr/ (?: irb [0-9\/\.]*       ) /xx;
+    my $JSRV  = qr/ (?: jsrv [0-9\.]*        ) /xx;
+    my $LO    = qr/ (?: lo [0-9\.]+          ) /xx;
+    my $ME    = qr/ (?: me [0-9\.]+          ) /xx;
+    my $PFE   = qr/ (?: pf [eh] - [0-9\/\.]+ ) /xx;
+    my $PIP   = qr/ (?: pip [0-9\/\.]+       ) /xx;
+    my $VCP   = qr/ (?: vcp- [0-9\/\.]+      ) /xx;
+    my $VLAN  = qr/ (?: vlan\. [0-9]+        ) /xx;
+    my $OTHER = qr/ dsc | esi | gre | ipip | jsrv | lsi | mtun | pimd | pime | tap | vlan | vme | vtep /xx;
 
-    my $IFACES = qr/$AE|$BME|$ETH|$LO|$ME|$JSRV|$VCP|$VLAN|$OTHER/xx;
+    my $IFACES = qr/$AE|$BME|$CBP|$ETH|$IRB|$LO|$ME|$JSRV|$PFE|$PIP|$VCP|$VLAN|$OTHER/xx;
 
     $line =~ s/^ ( (?: $IFACES) \s+ up \s+ up \N*   ) $/$self->_colorize($1, $GREEN)/exx;
     $line =~ s/^ (     $ETH     \s+ VCP             ) $/$self->_colorize($1, $GREEN)/exx;
