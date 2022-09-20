@@ -1735,3 +1735,6 @@ Interface               Admin Link Proto    Local                 Remote
 {master:0}
 foobar@xxxx.xxxxxx> exit 
 
+[1;31m    Laser receiver power                      :  0.0000 mW / - Inf dBm[0m
+[36m    Laser receiver power                      :  0.2520 mW / -5.99 dBm[0m
+

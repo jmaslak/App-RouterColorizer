@@ -1735,3 +1735,6 @@ vtep                    up    up
 {master:0}
 foobar@xxxx.xxxxxx> exit 
 
+    Laser receiver power                      :  0.0000 mW / - Inf dBm
+    Laser receiver power                      :  0.2520 mW / -5.99 dBm
+
