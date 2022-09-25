@@ -1,4 +1,6 @@
 {{$NEXT}}
+
+1.222681  2022-09-25 21:51:48+00:00 UTC
  Joelle Maslak <jmaslak@antelope.ent>
  * [bugfix] Ciena alarm colorization swapped colors for acked and
    non-acked alarms, fixed.
