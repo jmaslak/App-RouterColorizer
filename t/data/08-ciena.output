@@ -521,15 +521,15 @@ xxxxx.xxxxxx$ e[1D [1Dalarm show
 +---------------------------------------------- ACTIVE ALARMS --------------------------------------------------------------+
 |IID  |Ack|Int|ATID |Severity| Date & Time (Local)      | Instance             | Description                                |
 +-----+---+---+-----+--------+--------------------------+----------------------+--------------------------------------------+
-|[1;31m    2[0m|[1;31m Y [0m|[1;31m   [0m|[1;31m   51[0m|[1;31mcritical[0m|[1;31m Thu Sep 15 17:12:30 [4m2[24m022 [0m|[1;31m               PTP-1/2[0m|[1;31m Rx Loss of Signal                          [0m|
-|[1;31m    3[0m|[1;31m Y [0m|[1;31m   [0m|[1;31m   51[0m|[1;31mcritical[0m|[1;31m Thu Sep 15 17:12:30 [4m2[24m022 [0m|[1;31m               PTP-1/4[0m|[1;31m Rx Loss of Signal                          [0m|
-|[1;31m    4[0m|[1;31m Y [0m|[1;31m   [0m|[1;31m   51[0m|[1;31mcritical[0m|[1;31m Thu Sep 15 17:12:30 [4m2[24m022 [0m|[1;31m               PTP-1/5[0m|[1;31m Rx Loss of Signal                          [0m|
-|[33m    4[0m|[33m   [0m|[33m   [0m|[33m   51[0m|[33mcritical[0m|[33m Thu Sep 15 17:12:30 [4m2[24m022 [0m|[33m               PTP-1/5[0m|[33m Rx Loss of Signal                          [0m|
-|[1;31m    5[0m|[1;31m Y [0m|[1;31m   [0m|[1;31m   51[0m|[1;31mcritical[0m|[1;31m Thu Sep 15 17:12:30 [4m2[24m022 [0m|[1;31m               PTP-1/6[0m|[1;31m Rx Loss of Signal                          [0m|
-|[1;31m    6[0m|[1;31m Y [0m|[1;31m   [0m|[1;31m   51[0m|[1;31mcritical[0m|[1;31m Thu Sep 15 17:12:30 [4m2[24m022 [0m|[1;31m               PTP-1/7[0m|[1;31m Rx Loss of Signal                          [0m|
-|[1;31m    7[0m|[1;31m Y [0m|[1;31m   [0m|[1;31m   51[0m|[1;31mcritical[0m|[1;31m Thu Sep 15 17:12:30 [4m2[24m022 [0m|[1;31m               PTP-1/8[0m|[1;31m Rx Loss of Signal                          [0m|
-|[1;31m    8[0m|[1;31m Y [0m|[1;31m   [0m|[1;31m   51[0m|[1;31mcritical[0m|[1;31m Thu Sep 15 17:12:30 [4m2[24m022 [0m|[1;31m               PTP-1/9[0m|[1;31m Rx Loss of Signal                          [0m|
-|[1;31m    9[0m|[1;31m Y [0m|[1;31m   [0m|[1;31m   51[0m|[1;31mcritical[0m|[1;31m Thu Sep 15 17:12:30 [4m2[24m022 [0m|[1;31m              PTP-1/10[0m|[1;31m Rx Loss of Signal                          [0m|
+|[33m    2[0m|[33m Y [0m|[33m   [0m|[33m   51[0m|[33mcritical[0m|[33m Thu Sep 15 17:12:30 [4m2[24m022 [0m|[33m               PTP-1/2[0m|[33m Rx Loss of Signal                          [0m|
+|[33m    3[0m|[33m Y [0m|[33m   [0m|[33m   51[0m|[33mcritical[0m|[33m Thu Sep 15 17:12:30 [4m2[24m022 [0m|[33m               PTP-1/4[0m|[33m Rx Loss of Signal                          [0m|
+|[33m    4[0m|[33m Y [0m|[33m   [0m|[33m   51[0m|[33mcritical[0m|[33m Thu Sep 15 17:12:30 [4m2[24m022 [0m|[33m               PTP-1/5[0m|[33m Rx Loss of Signal                          [0m|
+|[1;31m    4[0m|[1;31m   [0m|[1;31m   [0m|[1;31m   51[0m|[1;31mcritical[0m|[1;31m Thu Sep 15 17:12:30 [4m2[24m022 [0m|[1;31m               PTP-1/5[0m|[1;31m Rx Loss of Signal                          [0m|
+|[33m    5[0m|[33m Y [0m|[33m   [0m|[33m   51[0m|[33mcritical[0m|[33m Thu Sep 15 17:12:30 [4m2[24m022 [0m|[33m               PTP-1/6[0m|[33m Rx Loss of Signal                          [0m|
+|[33m    6[0m|[33m Y [0m|[33m   [0m|[33m   51[0m|[33mcritical[0m|[33m Thu Sep 15 17:12:30 [4m2[24m022 [0m|[33m               PTP-1/7[0m|[33m Rx Loss of Signal                          [0m|
+|[33m    7[0m|[33m Y [0m|[33m   [0m|[33m   51[0m|[33mcritical[0m|[33m Thu Sep 15 17:12:30 [4m2[24m022 [0m|[33m               PTP-1/8[0m|[33m Rx Loss of Signal                          [0m|
+|[33m    8[0m|[33m Y [0m|[33m   [0m|[33m   51[0m|[33mcritical[0m|[33m Thu Sep 15 17:12:30 [4m2[24m022 [0m|[33m               PTP-1/9[0m|[33m Rx Loss of Signal                          [0m|
+|[33m    9[0m|[33m Y [0m|[33m   [0m|[33m   51[0m|[33mcritical[0m|[33m Thu Sep 15 17:12:30 [4m2[24m022 [0m|[33m              PTP-1/10[0m|[33m Rx Loss of Signal                          [0m|
 |[36m    9[0m|[36m Y [0m|[36m   [0m|[36m   51[0m|[36m   info [0m|[36m Thu Sep 15 17:12:30 [4m2[24m022 [0m|[36m              PTP-1/10[0m|[36m Rx Loss of Signal                          [0m|
 +-----+---+---+-----+--------+--------------------------+----------------------+--------------------------------------------+
 | |              \---------> ATID : Alarm Table ID                                                                          |

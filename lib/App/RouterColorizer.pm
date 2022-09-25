@@ -469,18 +469,6 @@ s/ ^ ( \| \s+ [0-9]* \s* \| ) ( \Q Span Loss (dB)\E \s* ) ( \| ) ( \s+ $NUM \s+ 
     # alarm show
     $line =~ s/ ^ ( \| ) ( \s+ [0-9]* ) ( \| ) ( \s+ ) ( \| ) ( [^|]+ ) ( \| ) ( \s+ [0-9]+ )
                   ( \| ) ( \s* $BIGALARMS|$LITTLEALARMS \s* ) ( \| ) ( [^|]+ ) ( \| ) ( [^|]+ ) ( \| ) ( [^|]+ ) ( \| ) $/
-        $1.$self->_colorize($2, $ORANGE).
-        $3.$self->_colorize($4, $ORANGE).
-        $5.$self->_colorize($6, $ORANGE).
-        $7.$self->_colorize($8, $ORANGE).
-        $9.$self->_colorize($10, $ORANGE).
-        $11.$self->_colorize($12, $ORANGE).
-        $13.$self->_colorize($14, $ORANGE).
-        $15.$self->_colorize($16, $ORANGE).
-        $17/exx;
-    $line =~
-      s/ ^ ( \| ) ( \s+ [0-9]* ) ( \| ) ( \s+ \QY\E \s* ) ( \| ) ( [^|]+ ) ( \| ) ( \s+ [0-9]+ )
-                  ( \| ) ( \s* $BIGALARMS \s* ) ( \| ) ( [^|]+ ) ( \| ) ( [^|]+ ) ( \| ) ( [^|]+ ) ( \| ) $/
         $1.$self->_colorize($2, $RED).
         $3.$self->_colorize($4, $RED).
         $5.$self->_colorize($6, $RED).
@@ -489,6 +477,18 @@ s/ ^ ( \| \s+ [0-9]* \s* \| ) ( \Q Span Loss (dB)\E \s* ) ( \| ) ( \s+ $NUM \s+ 
         $11.$self->_colorize($12, $RED).
         $13.$self->_colorize($14, $RED).
         $15.$self->_colorize($16, $RED).
+        $17/exx;
+    $line =~
+      s/ ^ ( \| ) ( \s+ [0-9]* ) ( \| ) ( \s+ \QY\E \s* ) ( \| ) ( [^|]+ ) ( \| ) ( \s+ [0-9]+ )
+                  ( \| ) ( \s* $BIGALARMS \s* ) ( \| ) ( [^|]+ ) ( \| ) ( [^|]+ ) ( \| ) ( [^|]+ ) ( \| ) $/
+        $1.$self->_colorize($2, $ORANGE).
+        $3.$self->_colorize($4, $ORANGE).
+        $5.$self->_colorize($6, $ORANGE).
+        $7.$self->_colorize($8, $ORANGE).
+        $9.$self->_colorize($10, $ORANGE).
+        $11.$self->_colorize($12, $ORANGE).
+        $13.$self->_colorize($14, $ORANGE).
+        $15.$self->_colorize($16, $ORANGE).
         $17/exx;
     $line =~
       s/ ^ ( \| ) ( \s+ [0-9]* ) ( \| ) ( \s+ \QY\E \s* ) ( \| ) ( [^|]+ ) ( \| ) ( \s+ [0-9]+ )
