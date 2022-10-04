@@ -1,4 +1,6 @@
 {{$NEXT}}
+
+1.222770  2022-10-04 15:10:08+00:00 UTC
  Joelle Maslak <jmaslak@antelope.ent>
  * [feature] Highlight (info color) JunOS "last flapped" in "show int"
 
