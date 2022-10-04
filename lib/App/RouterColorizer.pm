@@ -141,7 +141,10 @@ sub _parse_line ( $self, $text ) {
     # Numbers
     # We need to make sure we don't highlight undesirably, such as in an
     # escape sequence.
-    $line =~ s/ ( (?<! [:\.0-9]) (?<! \e \[) [0-9]+ (?! [:0-9]) ) /$self->_numerify($1)/egxx;
+    $line =~ s/ (
+                    (?<! [:\.0-9]) (?<! \e \[) (?<! \e \[\?)
+                    [0-9]+ (?! [:0-9])
+                ) /$self->_numerify($1)/egxx;
 
     return "$preamble$line$trailer$eol";
 }
