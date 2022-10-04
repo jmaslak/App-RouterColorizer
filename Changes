@@ -1,4 +1,6 @@
 {{$NEXT}}
+
+1.222772  2022-10-04 23:33:30+00:00 UTC
  Joelle Maslak <jmaslak@antelope.ent>
  * [bugfix] Do not try to underline numbers in meta-mode xterm escape sequence
 
