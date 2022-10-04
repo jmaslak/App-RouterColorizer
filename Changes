@@ -1,4 +1,6 @@
 {{$NEXT}}
+ Joelle Maslak <jmaslak@antelope.ent>
+ * [feature] Highlight (info color) JunOS "last flapped" in "show int"
 
 1.222681  2022-09-25 21:51:48+00:00 UTC
  Joelle Maslak <jmaslak@antelope.ent>

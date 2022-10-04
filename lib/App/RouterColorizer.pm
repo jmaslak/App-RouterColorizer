@@ -301,6 +301,8 @@ s/^ ( \QPhysical interface: \E \S+                                     ) $/$self
 
     $line =~ s/^ ( \Q  Logical interface \E \N+ ) $/$self->_colorize($1, $INFO)/exx;
 
+    $line =~ s/^ ( \Q  Last flapped   : \E \N+ ) $/$self->_colorize($1, $INFO)/exx;
+
     $line =~ s/^ ( \Q  Input rate     : \E $NUM \N+ ) $/$self->_colorize($1, $INFO)/exx;
     $line =~ s/^ ( \Q  Output rate    : \E $NUM \N+ ) $/$self->_colorize($1, $INFO)/exx;
 
