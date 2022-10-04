@@ -1731,6 +1731,31 @@ Interface               Admin Link Proto    Local                 Remote
 [32mtap                     up    up[0m
 [1;31mvme                     up    down[0m
 [32mvtep                    up    up[0m
+[32mge-0/0/0                up    up[0m
+[32mge-0/0/0.0              up    up   eth-switch[0m
+[32mgr-0/0/0                up    up[0m
+[32mip-0/0/0                up    up[0m
+[32mlsq-0/0/0               up    up[0m
+[32mlt-0/0/0                up    up[0m
+[32mmt-0/0/0                up    up[0m
+[32msp-0/0/0                up    up[0m
+[32msp-0/0/0.0              up    up   inet[0m
+                                   inet6
+[32msp-0/0/0.16383          up    up   inet     [30m[46m10.0.0.1[0m            --> [30m[43m10.0.0.16[0m[0m
+[32mesi                     up    up[0m
+[32mfti0                    up    up[0m
+[1;31mfxp0                    up    down[0m
+[32mgre                     up    up[0m
+[32mipip                    up    up[0m
+[32mirb                     up    up[0m
+[32mpime                    up    up[0m
+[32mpp0                     up    up[0m
+[32mppd0                    up    up[0m
+[32mppe0                    up    up        [0m
+[32mrbeb                    up    up[0m
+[32mst0                     up    up[0m
+[1;31mst0.1000                up    down inet     [30m[42m192.0.2.1/31[0m [0m
+
 
 {master:0}
 foobar@xxxx.xxxxxx> exit 

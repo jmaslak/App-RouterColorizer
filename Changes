@@ -1,4 +1,6 @@
 {{$NEXT}}
+ Joelle Maslak <jmaslak@antelope.ent>
+ * [feature] Highlight additional interface types on JunOS "show int terse"
 
 1.222770  2022-10-04 15:10:08+00:00 UTC
  Joelle Maslak <jmaslak@antelope.ent>
