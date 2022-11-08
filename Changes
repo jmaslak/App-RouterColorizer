@@ -1,4 +1,6 @@
 {{$NEXT}}
+ Joelle Maslak <jmaslak@antelope.net>
+ * [feature] Colorize Ciena remote fault / far end faults as orange, not red
 
 1.223080  2022-11-04 15:28:48+00:00 UTC
  Joelle Maslak <jmaslak@antelope.net>
