@@ -1,4 +1,6 @@
 {{$NEXT}}
+ Joelle Maslak <jmaslak@antelope.net>
+ * [bugfix] Properly colorize Ciena alarms that have 5+ digit IIDs
 
 1.223120  2022-11-08 18:18:36+00:00 UTC
  Joelle Maslak <jmaslak@antelope.net>

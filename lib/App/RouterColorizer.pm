@@ -496,7 +496,7 @@ s/^ ( \| \s+ \| ) ( \Q Optical Return Loss \E \( \QdB\E \) ) ( \s+ \| \s+ ) ( $B
         $1.$self->_colorize($2, $RED).$3.$self->_colorize($4, $RED).$5/exx;
 
     # alarm show
-    $line =~ s/ ^ ( \| ) ( \s+ [0-9]* ) ( \| ) ( \s+ ) ( \| ) ( [^|]+ ) ( \| ) ( \s+ [0-9]+ )
+    $line =~ s/ ^ ( \| ) ( \s* [0-9]* ) ( \| ) ( \s+ ) ( \| ) ( [^|]+ ) ( \| ) ( \s+ [0-9]+ )
                   ( \| ) ( \s* $BIGALARMS|$LITTLEALARMS \s* ) ( \| ) ( [^|]+ ) ( \| ) ( [^|]+ )
                   ( \| ) ( \s+ $BIGOVERRIDES \s+ ) ( \| ) $/
         $1.$self->_colorize($2, $ORANGE).
@@ -508,7 +508,7 @@ s/^ ( \| \s+ \| ) ( \Q Optical Return Loss \E \( \QdB\E \) ) ( \s+ \| \s+ ) ( $B
         $13.$self->_colorize($14, $ORANGE).
         $15.$self->_colorize($16, $ORANGE).
         $17/exx;
-    $line =~ s/ ^ ( \| ) ( \s+ [0-9]* ) ( \| ) ( \s+ ) ( \| ) ( [^|]+ ) ( \| ) ( \s+ [0-9]+ )
+    $line =~ s/ ^ ( \| ) ( \s* [0-9]* ) ( \| ) ( \s+ ) ( \| ) ( [^|]+ ) ( \| ) ( \s+ [0-9]+ )
                   ( \| ) ( \s* $BIGALARMS|$LITTLEALARMS \s* ) ( \| ) ( [^|]+ ) ( \| ) ( [^|]+ ) ( \| ) ( [^|]+ ) ( \| ) $/
         $1.$self->_colorize($2, $RED).
         $3.$self->_colorize($4, $RED).
