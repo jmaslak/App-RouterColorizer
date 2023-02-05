@@ -184,7 +184,7 @@ s/^ ( \Q  Inherits configuration from and member of peer-group \E \N+ ) $/$self-
     $line =~
       s/^ ( \Q    \E (?: IPv4 | IPv6) \Q Unicast:     \E \N* ) $/$self->_colorize($1, $INFO)/exx;
     $line =~
-s/^ ( \Q  Configured maximum total number of routes is \E \d+ \Q, warning limit is \E \d+ ) $/$self->_colorize($1, $INFO)/exx;
+s/^ ( \Q  Configured maximum total number of routes is \E \d+ (?: \Q, warning limit is \E \d+ )? ) $/$self->_colorize($1, $INFO)/exx;
 
     # BGP Errors
     my $errors = qr/
