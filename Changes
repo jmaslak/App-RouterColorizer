@@ -1,4 +1,7 @@
 {{$NEXT}}
+ Joelle Maslak <jmaslak@antelope.net>
+ * [feature] Ciena colorizing of additional status messages
+ * [bugfix] Ciena colorizing of disabled ports in show ptp is proper now
 
 1.230360  2023-02-05 00:27:06+00:00 UTC
  Joelle Maslak <jmaslak@antelope.net>
