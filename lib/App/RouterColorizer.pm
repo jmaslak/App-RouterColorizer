@@ -334,6 +334,9 @@ s/^ ( \QPhysical interface: \E \S+                                     ) $/$self
     $line =~ s/^ ( \Q  Input rate     : \E $NUM \N+ ) $/$self->_colorize($1, $INFO)/exx;
     $line =~ s/^ ( \Q  Output rate    : \E $NUM \N+ ) $/$self->_colorize($1, $INFO)/exx;
 
+    $line =~ s/^ ( \Q    Input packets : \E $NUM \N+ ) $/$self->_colorize($1, $INFO)/exx;
+    $line =~ s/^ ( \Q    Output packets: \E $NUM \N+ ) $/$self->_colorize($1, $INFO)/exx;
+
     $line =~ s/^ ( \Q  Active alarms  : None\E ) $/$self->_colorize($1, $GREEN)/exx;
     $line =~ s/^ ( \Q  Active alarms  : \E \N+ ) $/$self->_colorize($1, $RED)/exx;
     $line =~ s/^ ( \Q  Active defects : None\E ) $/$self->_colorize($1, $GREEN)/exx;
