@@ -1,4 +1,6 @@
 {{$NEXT}}
+ Joelle Maslak <jmaslak@antelope.net>
+ * [bugfix] Do not colorize "show platform jericho tcam summary" on Arista
 
 1.231100  2023-04-20 03:11:30+00:00 UTC
  Joelle Maslak <jmaslak@antelope.net>

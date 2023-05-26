@@ -221,7 +221,7 @@ s/^ ( \Q  Configured maximum total number of routes is \E \d+ (?: \Q, warning li
     #
 
     # We look for information lines
-    if ( $line =~ m/^     ((?:$INT [^,]+, )*$INT [^,]+)$/ ) {
+    if ( $line =~ m/^     ((?:$INT [^, ][^,]+, )*$INT [^, ][^,]+)$/ ) {
         my (%values) =
           map { reverse split / /, $_, 2 } split ', ', $1;
 
