@@ -1,4 +1,6 @@
 {{$NEXT}}
+
+1.231460  2023-05-25 20:38:08-06:00 America/Denver
  Joelle Maslak <jmaslak@antelope.net>
  * [bugfix] Do not colorize "show platform jericho tcam summary" on Arista
 
