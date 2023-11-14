@@ -80,6 +80,7 @@ our $IPV4CIDR = qr/ $RE{net}{IPv4}
                            | (?:[0-9])
                         )
                     )?
+                    (?![0-9])
                 /xx;
 
 our $IPV6CIDR = qr/ $RE{net}{IPv6}
@@ -91,6 +92,7 @@ our $IPV6CIDR = qr/ $RE{net}{IPv6}
                            | (?:[0-9])
                         )
                     )?
+                    (?![0-9])
                 /xx;
 
 our $BIGALARMS    = qr/critical|major|minor|warning/;

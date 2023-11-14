@@ -1,4 +1,7 @@
 {{$NEXT}}
+ Joelle Maslak <jmaslak@antelope.net>
+ * [bugfix] Do not colorize too much of the output from "show security
+   flow session" on Junos.
 
 1.231650  2023-06-14 17:42:45+00:00 UTC
  Joelle Maslak <jmaslak@antelope.net>
