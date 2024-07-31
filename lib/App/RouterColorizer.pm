@@ -1,7 +1,7 @@
 #!/usr/bin/env perl
 
 #
-# Copyright (C) 2021-2023 Joelle Maslak
+# Copyright (C) 2021-2024 Joelle Maslak
 # All Rights Reserved - See License
 #
 
@@ -673,6 +673,41 @@ s/^ ( \| \s+ \| ) ( \Q Optical Return Loss \E \( \QdB\E \) ) ( \s+ \| \s+ ) ( $B
         $9.$self->_colorize($10, $ORANGE).
         $11.$self->_colorize($12, $ORANGE).
         $13/exx;
+
+    # chassis power show
+    $line =~ s/ ^ ( \| ) ( [^|]+ ) ( \| ) ( \s+ \QDisabled\E \s+ ) ( \| ) ( [^|]+ )
+                  ( \| ) ( [^|]+ ) ( \| ) ( [^|]+                ) ( \| ) ( [^|]+ )
+                  ( \| ) ( [^|]+ ) ( \| ) $ /
+        $1.$self->_colorize($2, $ORANGE).
+        $3.$self->_colorize($4, $ORANGE).
+        $5.$self->_colorize($6, $ORANGE).
+        $7.$self->_colorize($8, $ORANGE).
+        $9.$self->_colorize($10, $ORANGE).
+        $11.$self->_colorize($12, $ORANGE).
+        $13.$self->_colorize($14, $ORANGE).
+        $15/exx;
+    $line =~ s/ ^ ( \| ) ( [^|]+ ) ( \| ) ( \s+ \QEnabled\E \s+ ) ( \| ) \s+ (\QUp\E \s+ )
+                  ( \| ) ( [^|]+ ) ( \| ) ( [^|]+               ) ( \| ) ( [^|]+ )
+                  ( \| ) ( [^|]+ ) ( \| ) $ /
+        $1.$self->_colorize($2, $GREEN).
+        $3.$self->_colorize($4, $GREEN).
+        $5.$self->_colorize($6, $GREEN).
+        $7.$self->_colorize($8, $GREEN).
+        $9.$self->_colorize($10, $GREEN).
+        $11.$self->_colorize($12, $GREEN).
+        $13.$self->_colorize($14, $GREEN).
+        $15/exx;
+    $line =~ s/ ^ ( \| ) ( [^|]+ ) ( \| ) ( \s+ \QEnabled\E \s+ ) ( \| ) \s+ (\QFaulted\E \s+ )
+                  ( \| ) ( [^|]+ ) ( \| ) ( [^|]+               ) ( \| ) ( [^|]+ )
+                  ( \| ) ( [^|]+ ) ( \| ) $ /
+        $1.$self->_colorize($2, $RED).
+        $3.$self->_colorize($4, $RED).
+        $5.$self->_colorize($6, $RED).
+        $7.$self->_colorize($8, $RED).
+        $9.$self->_colorize($10, $RED).
+        $11.$self->_colorize($12, $RED).
+        $13.$self->_colorize($14, $RED).
+        $15/exx;
 
     # Success for dumps
     $line =~ s/^ ( \QSuccess! Preparing state dump...\E \s* ) $/ $self->_colorize($1, $GREEN)/exx;
