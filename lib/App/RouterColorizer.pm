@@ -686,7 +686,7 @@ s/^ ( \| \s+ \| ) ( \Q Optical Return Loss \E \( \QdB\E \) ) ( \s+ \| \s+ ) ( $B
         $11.$self->_colorize($12, $ORANGE).
         $13.$self->_colorize($14, $ORANGE).
         $15/exx;
-    $line =~ s/ ^ ( \| ) ( [^|]+ ) ( \| ) ( \s+ \QEnabled\E \s+ ) ( \| ) \s+ (\QUp\E \s+ )
+    $line =~ s/ ^ ( \| ) ( [^|]+ ) ( \| ) ( \s+ \QEnabled\E \s+ ) ( \| ) ( \s+ \QUp\E \s+ )
                   ( \| ) ( [^|]+ ) ( \| ) ( [^|]+               ) ( \| ) ( [^|]+ )
                   ( \| ) ( [^|]+ ) ( \| ) $ /
         $1.$self->_colorize($2, $GREEN).
@@ -697,7 +697,7 @@ s/^ ( \| \s+ \| ) ( \Q Optical Return Loss \E \( \QdB\E \) ) ( \s+ \| \s+ ) ( $B
         $11.$self->_colorize($12, $GREEN).
         $13.$self->_colorize($14, $GREEN).
         $15/exx;
-    $line =~ s/ ^ ( \| ) ( [^|]+ ) ( \| ) ( \s+ \QEnabled\E \s+ ) ( \| ) \s+ (\QFaulted\E \s+ )
+    $line =~ s/ ^ ( \| ) ( [^|]+ ) ( \| ) ( \s+ \QEnabled\E \s+ ) ( \| ) ( \s+ \QFaulted\E \s+ )
                   ( \| ) ( [^|]+ ) ( \| ) ( [^|]+               ) ( \| ) ( [^|]+ )
                   ( \| ) ( [^|]+ ) ( \| ) $ /
         $1.$self->_colorize($2, $RED).
