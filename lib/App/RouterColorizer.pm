@@ -109,6 +109,8 @@ our $STP_WARN  = qr/learning|LRN/;
 our $STP_BAD   = qr/discarding|BLK/;
 our $STP_TYPES = qr/designated|root|alternate|Desg|Root|Altn/;
 
+our $TTY_TYPES = qr/AUX|CTY|LPR|TTY|VTY/;
+
 our @bgcolors = (
     "\e[30m\e[47m",    # black on white
     "\e[30m\e[41m",    # black on red
@@ -227,11 +229,24 @@ s/^ ( \Q  Configured maximum total number of routes is \E \d+ (?: \Q, warning li
     $line =~ s/^ ( (?: Local | Remote) \Q TCP address is \E \N+ ) $/$self->_colorize($1, $INFO)/exx;
 
     #
+    # Terminals/Serial
+    #
+    $line =~ s/^ ( \QBaud rate (TX\/RX) is \E .* ) $/$self->_colorize($1, $INFO)/exx;
+    $line =~ s/^ ( \QStatus: Ready\E ) $/$self->_colorize($1, $GREEN)/exx;
+    $line =~ s/^ ( \QStatus: \E .* ) $/$self->_colorize($1, $INFO)/exx;
+    $line =~ s/^ ( \QModem state: Idle\E ) $/$self->_colorize($1, $GREEN)/exx;
+    $line =~ s/^ ( \QModem state: Ready\E ) $/$self->_colorize($1, $GREEN)/exx;
+    $line =~ s/^ ( \QModem state: \E .* ) $/$self->_colorize($1, $INFO)/exx;
+    $line =~ s/^ ( Line \s $INT \Q, Location: \E .* ) $/$self->_colorize($1, $INFO)/exx;
+
+    #
     # Interfaces
     #
 
-    # We look for information lines
-    if ( $line =~ m/^     ((?:$INT [^, ][^,]+, )*$INT [^, ][^,]+)$/ ) {
+    # We look for information lines, but ignore VTY/CTY/etc lines
+    if ( $line =~ m/^\s+$INT $TTY_TYPES/ ) {
+        # Ignore this line because it's a TTY
+    } elsif ( $line =~ m/^     ((?:$INT [^, ][^,]+, )*$INT [^, ][^,]+)$/ ) {
         my (%values) =
           map { reverse split / /, $_, 2 } split ', ', $1;
 
