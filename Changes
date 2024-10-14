@@ -1,4 +1,6 @@
 {{$NEXT}}
+ Joelle Maslak <jmaslak@antelope.net>
+ * [feature] Colorize "Error in authentication" on newer Arista EOS
 
 1.242480  2024-09-03 20:17:31-06:00 America/Denver
  Joelle Maslak <jmaslak@antelope.net>

@@ -341,6 +341,9 @@ s/^ ( $INTSHORT \s+ $STP_TYPES\s+ $STP_BAD  \s+ [0-9]+ \s+ [0-9]+\.[0-9]+ \s+ P2
     $line =~ s/^ (Connection: \s Active \s .*) $/$self->_colorize($1, $GREEN)/exx;
     $line =~ s/^ (Connection: \s .*          ) $/$self->_colorize($1, $RED)/exx;
 
+    # Error in authentication
+    $line =~ s/^(Error in authentication)$/$self->_colorize($1, $RED)/e;
+
     return $line;
 }
 
